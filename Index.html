@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIP Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8b400;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .review-form {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .review-form h2 {
+            margin-top: 0;
+        }
+        .review-form input, .review-form textarea, .review-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .review-form button {
+            background-color: #f8b400;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #d49400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DRIP Cafe</h1>
+    </header>
+
+    <section class="container">
+        <h2>About Us</h2>
+        <p>Welcome to DRIP Cafe, where we serve the best coffee and pastries in town. Come and enjoy our cozy ambiance and friendly service. We look forward to your visit!</p>
+    </section>
+
+    <section class="container">
+        <h2>Leave a Review</h2>
+        <form class="review-form">
+            <h2>We value your feedback!</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="visit-date">Date of Visit:</label>
+            <input type="date" id="visit-date" name="visit-date" required>
+
+            <label for="visit-time">Time of Visit:</label>
+            <input type="time" id="visit-time" name="visit-time" required>
+
+            <label for="order-number">Order Number:</label>
+            <input type="text" id="order-number" name="order-number">
+
+            <label for="food-quality">Food Quality:</label>
+            <select id="food-quality" name="food-quality">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="beverage-quality">Beverage Quality:</label>
+            <select id="beverage-quality" name="beverage-quality">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="cleanliness">Cleanliness:</label>
+            <select id="cleanliness" name="cleanliness">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="ambiance">Ambiance:</label>
+            <select id="ambiance" name="ambiance">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="value">Value for Money:</label>
+            <select id="value" name="value">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="positive-feedback">What did you like about your experience?</label>
+            <textarea id="positive-feedback" name="positive-feedback" rows="4"></textarea>
+
+            <label for="improvement-feedback">What could we improve?</label>
+            <textarea id="improvement-feedback" name="improvement-feedback" rows="4"></textarea>
+
+            <label for="additional-comments">Any additional comments or suggestions?</label>
+            <textarea id="additional-comments" name="additional-comments" rows="4"></textarea>
+
+            <label for="recommend">Would you recommend us to others?</label>
+            <select id="recommend" name="recommend">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="consent">
+                <input type="checkbox" id="consent" name="consent" required>
+                I consent to having my review published on DRIP Cafe's website and social media platforms.
+            </label>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+</body>
+</html>
